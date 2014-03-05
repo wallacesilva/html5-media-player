@@ -1,16 +1,21 @@
-HMP - Html5 Media Player
+HMP - HTML5 Media Player
 ==================
 
 A HTML5 Media Player, actually only play audio files supported by browsers with HTML5.
-
 This a Open Source project to play your files with personalization.
+
+How to use
+---
+
+To use this, [download](https://github.com/wallacesilva/html5-media-player/archive/master.zip) and unzip and open in your browser file 'index.html'. 
+
+You can clone this repo using: `git clone https://github.com/wallacesilva/html5-media-player/`
 
 Features
 ---
 
-- Play audio files from your PC/Notebook(locally);
-- Manager playlist to execute(clear, add, remove, previous, next music);
-
+- Play audio files from your PC/Notebook (locally);
+- Manager playlist to execute (clear, add, remove, previous, next music);
 
 Future
 ---
@@ -26,15 +31,15 @@ This project to want offer to users:
 - Create plugin/extension to browsers;
 - Implement this player with @node-webkit - https://github.com/rogerwang/node-webkit;
 
-This project No have
+This project don't have
 ---
 
-Things thats this projects no have:
+Things thats this projects don't have:
 
 - No save your files location;
 - No play video files(for now);
 - No have themes (for now);
-- No need usage externals libraries or frameworks, like jQuery, Moontools, only id3tags;
+- No need usage externals libraries or frameworks, like jQuery, Mootools, only id3tags;
 
 Requirements
 ---
@@ -52,6 +57,6 @@ This project and/or me don't offer support to users, then beware on use.
 Change Logs
 ---
 
-**v0.1.0**
+**v0.1.0 (05/03/2014)**
 
 - Initial commit with all files working the basic
