@@ -16,6 +16,7 @@ Features
 
 - Play audio files from your PC/Notebook (locally);
 - Manager playlist to execute (clear, add, remove, previous, next music);
+- No required Flash to play musics;
 
 Future
 ---
@@ -24,6 +25,7 @@ This project to want offer to users:
 
 - Themes to personalize;
 - Play video files;
+- Visualizer to musics (using canvas/html5 or similar);
 - Show Youtube videos to audio/video file (open on lightbox or external window);
 - Get audio/video files from websites, like Youtube, Grooveshark, Lastfm;
 - Usage the id3tags to get tag from audio files and show to user;
@@ -46,6 +48,8 @@ Requirements
 
 This project require a browser with HTML5 that can play audio and video files.
 This files are tested on Chrome and Firefox, but Opera newest and Safari thats uses webkit on core would can play musics. 
+
+**This project NO REQUIRE FLASH to play musics.**
 
 Support
 ---
