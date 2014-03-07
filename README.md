@@ -31,7 +31,7 @@ This project to want offer to users:
 - Usage the id3tags to get tag from audio files and show to user;
 - Implement Last.fm AudioScroobler (this will require login/password from user);
 - Create plugin/extension to browsers;
-- Implement this player with @node-webkit - https://github.com/rogerwang/node-webkit;
+- Implement this player with @node-webkit - https://github.com/rogerwang/node-webkit or similar;
 
 This project don't have
 ---
