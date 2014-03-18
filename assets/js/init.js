@@ -99,6 +99,28 @@ function PlaylistExecute(){
         this.playItem(file_id);
     }
 
+    this.shuffle = function() {
+
+        var counter = playlist_execute.length, temp, index;
+
+        // While there are elements in the array
+        while (counter > 0) {
+            // Pick a random index
+            index = Math.floor(Math.random() * counter);
+
+            // Decrease counter by 1
+            counter--;
+
+            // And swap the last element with it
+            temp = playlist_execute[counter];
+            playlist_execute[counter] = playlist_execute[index];
+            playlist_execute[index] = temp;
+        }
+
+        //return playlist_execute;
+        this.showItems();
+    }
+
     this.showItems = function(){
 
         table_id = '.playlist-execute';
