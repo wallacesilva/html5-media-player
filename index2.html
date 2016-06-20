@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Media Player</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <script type="text/javascript" src="assets/js/init.js"></script>
+    <script type="text/javascript">    
+    document.addEventListener('readystatechange', function(evt){
+        if (document.readyState=='complete') {
+
+            $('#btn-server-open').addEventListener('click', function(){
+                $('#player').src = 'h5mp.php';
+                $('#player').play();
+            });
+
+        }
+    });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="file" multiple id="media_files" class="hide" onchange="getSaveFiles(this.files)">
+                    <button type="button" onclick="$('#media_files').click();" class="btn pull-right">Open files</button>
+                    <button type="button" id="btn-server-open" class="btn pull-right">Open from Server</button>
+                    <h1>HTML5 Media Player</h1>
+                </div>
+                <div class="col-md-6 pull-left">
+                    <img src="assets/images/spectrum.gif" class="pull-left hidden img-spectrum" style="width:100%;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 pull-right">
+                    <div class="player">
+                        <div class="player-audio">
+                            <audio onended="javascript:;" controls autoplay id="player">
+                        </div>
+                        <div class="player-infos">
+                            <span class="player-infos-artist">{artist_name}</span>
+                            <span class="player-infos-title">{music_title}</span>
+                            <span class="player-infos-duration">{music_duration}</span>
+                            <span class="player-infos-album">{music_album}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <a href="javascript:;" class="btn" onclick="playlistOpened.addAllToPlaylistExecute();">Add All to Playlist</a>
+                    <a href="javascript:;" class="btn" onclick="playlistOpened.clearItems();">Clear files</a>
+                </div>
+                <h4>Files</h4>
+                <div class="playlist-files-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody class="playlist-files">                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <a href="javascript:;" class="btn" onclick="playlistExec.clearItems();">Clear playlist</a>
+                    <a href="javascript:;" class="btn" onclick="playlistExec.prevSong();">Previous</a>
+                    <a href="javascript:;" class="btn" onclick="playlistExec.nextSong();">Next</a>
+                </div>
+                <h4>Playing</h4>
+                <div class="playlist-execute-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody class="playlist-execute">                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+
+        <footer>
+            <center><small>Developed by <a href="http://wallacesilva.com" title="Wallace Silva">@wallacesilva</a></small></center>
+        </footer>
+    </div>
+</body>
+</html>
